@@ -13,10 +13,11 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Postcast',
+        text: 'LIVE',
         items: [
-          { text: 'Aktuell', link: '/podcast/aktuell' },
-          { text: 'Archiv', link: '/podcast/archiv' },
+          { text: 'Podcast', link: '/live/podcast' },
+          { text: 'TikTok', link: '/live/tiktok' },
+          { text: 'Events', link: '/live/events' }
         ]
       },
       {
