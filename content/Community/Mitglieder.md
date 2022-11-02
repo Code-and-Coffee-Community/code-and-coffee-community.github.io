@@ -1,5 +1,7 @@
 # Unsere Mitglieder
 
+[PLATZHALTER BANNER]
+
 Wir sind bereits über 300+ Mitglieder auf Discord und würden uns freuen, wenn du der Nächste bist. Was dich erwartet: Eine tolle Community aus dem DACH-Bereich, die sich mit der Programmierung beschäftigen. Egal ob Anfänger oder Profi, du bist herzlich willkommen!
 
 > Um Mitglied zu werden, musst du nur unseren kostenfreien Discord joinen.

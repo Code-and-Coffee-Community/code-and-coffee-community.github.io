@@ -2,7 +2,23 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   outDir: '../docs',
+  lastUpdated: true,
+  lang: 'de-DE',
   themeConfig: {
+    siteTitle: 'Code & Coffee',
+    logo: '/assets/images/logo.png',
+    nav: [
+      { text: 'Impressum', link: '/impressum.html' },
+      { text: 'Datenschutz', link: '/datenschutz.html' },
+    ],
+    socialLinks: [
+      { icon: 'discord', link: 'http://discord.code-n.coffee' },
+      { icon: 'github', link: 'https://github.com/Code-and-Coffee-Community' },
+    ],
+    footer: {
+      message: 'Code & Coffee',
+      copyright: 'Copyright © 2022'
+    },
     sidebar: [
       {
         text: 'Community',
