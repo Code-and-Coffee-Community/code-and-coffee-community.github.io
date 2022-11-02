@@ -6,7 +6,7 @@ export default defineConfig({
   lang: 'de-DE',
   themeConfig: {
     siteTitle: 'Code & Coffee',
-    logo: '/assets/images/logo.png',
+    logo: '/images/logo.png',
     nav: [
       { text: 'Impressum', link: '/impressum.html' },
       { text: 'Datenschutz', link: '/datenschutz.html' },
