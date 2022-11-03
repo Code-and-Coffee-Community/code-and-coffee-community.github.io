@@ -21,6 +21,15 @@ export default defineConfig({
     },
     sidebar: [
       {
+        text: 'Content',
+        items: [
+          { text: 'Blog', link: '/content/blog' },
+          { text: 'Podcast', link: '/content/podcast' },
+          { text: 'TikTok', link: '/content/tiktok' },
+          { text: 'Events', link: '/content/events' },
+        ]
+      },
+      {
         text: 'Community',
         items: [
           { text: 'Mitglieder', link: '/community/mitglieder' },
@@ -29,27 +38,12 @@ export default defineConfig({
         ]
       },
       {
-        text: 'LIVE',
-        items: [
-          { text: 'Podcast', link: '/live/podcast' },
-          { text: 'TikTok', link: '/live/tiktok' },
-          { text: 'Events', link: '/live/events' }
-        ]
-      },
-      {
         text: 'Anfrage',
         items: [
           { text: 'Kontakt', link: '/anfrage/kontakt' },
           { text: 'Kooperation', link: '/anfrage/kooperation' }
         ]
-      },
-      {
-        text: 'Legal',
-        items: [
-          { text: 'Impressum', link: '/impressum' },
-          { text: 'Datenschutz', link: '/datenschutz' },
-        ]
-      },
+      }
     ]
   }
 })

@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as t,d as a}from"./app.8b138d03.js";const h=JSON.parse('{"title":"Unsere Partner","description":"","frontmatter":{},"headers":[],"relativePath":"community/partner.md","lastUpdated":null}'),n={name:"community/partner.md"},s=a("",7),o=[s];function i(d,c,l,p,u,m){return t(),r("div",null,o)}const f=e(n,[["render",i]]);export{h as __pageData,f as default};
