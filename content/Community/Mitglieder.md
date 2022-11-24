@@ -7,7 +7,7 @@ import { ref } from 'vue'
 import { VPTeamMembers } from 'vitepress/theme'
 
 const members = ref([])
-fetch('https://discord.com/api/guilds/889432631672983562/widget.json').then(response => response.json()).then(json => {
+fetch('https://api.allorigins.win/raw?url=https://discord.com/api/guilds/889432631672983562/widget.json').then(response => response.json()).then(json => {
   json.members.map(member => {
     members.value.push({
       avatar: member.avatar_url,
