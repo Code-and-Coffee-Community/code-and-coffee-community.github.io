@@ -3,13 +3,14 @@ description: Wir sind sehr happy, über unsere Mitglieder. Hier findest du unser
 ---
 
 <script setup>
-import { ref } from 'vue'
+import { reactive } from 'vue'
 import { VPTeamMembers } from 'vitepress/theme'
 
-const members = ref([])
-fetch('https://api.allorigins.win/raw?url=https://discord.com/api/guilds/889432631672983562/widget.json').then(response => response.json()).then(json => {
+const state = reactive({ members: [] })
+
+fetch('https://discord.com/api/guilds/889432631672983562/widget.json').then(response => response.json()).then(json => {
   json.members.map(member => {
-    members.value.push({
+    state.members.push({
       avatar: member.avatar_url,
       name: member.username,
       title: member.status
@@ -19,9 +20,9 @@ fetch('https://api.allorigins.win/raw?url=https://discord.com/api/guilds/8894326
 </script>
 
 # Unsere Mitglieder
-Online: {{ members.length }}
+Online: {{ state.members.length }}
 
-<VPTeamMembers size="small" :members="members.sort((a, b) => 0.5 - Math.random())" />
+<VPTeamMembers size="small" :members="state.members" />
 
 ***
 
