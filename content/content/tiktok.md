@@ -2,8 +2,6 @@
 description: Alle Programmier-TikTok kannst du dir hier anschauen.
 ---
 
-[PLATZHALTER BANNER]
-
 # TikTok
 
 Diese Seite befindet sich noch im Aufbau.

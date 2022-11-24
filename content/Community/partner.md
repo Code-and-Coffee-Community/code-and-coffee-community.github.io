@@ -19,8 +19,6 @@ const members = [
 ]
 </script>
 
-[PLATZHALTER BANNER]
-
 # Unsere Partner
 
 <VPTeamMembers size="medium" :members="members" />

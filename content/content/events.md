@@ -2,8 +2,6 @@
 description: Alle Events und Veranstaltungen im Überblick.
 ---
 
-[PLATZHALTER BANNER]
-
 # Events
 
 Diese Seite befindet sich noch im Aufbau.

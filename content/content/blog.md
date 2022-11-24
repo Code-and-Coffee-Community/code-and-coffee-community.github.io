@@ -2,8 +2,6 @@
 description: Hier findest du spannende Artikel zum Thema Programmieren.
 ---
 
-[PLATZHALTER BANNER]
-
 # Blog
 
 Diese Seite befindet sich noch im Aufbau.

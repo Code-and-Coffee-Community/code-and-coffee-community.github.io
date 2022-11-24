@@ -2,8 +2,6 @@
 description: Unseren Podcast über das Thema Entwicklung und Programmierung findest du hier.
 ---
 
-[PLATZHALTER BANNER]
-
 # Podcast
 
 Diese Seite befindet sich noch im Aufbau.
