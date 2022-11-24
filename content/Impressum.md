@@ -1,3 +1,7 @@
+---
+description: Impressum haben wir auch.
+---
+
 # Impressum
 
 ## Angaben gemäß § 5 TMG

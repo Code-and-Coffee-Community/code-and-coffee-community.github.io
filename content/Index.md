@@ -13,7 +13,7 @@ hero:
       text: Mitglied werden
       link: http://discord.code-n.coffee
     - theme: alt
-      text: Mehr erfahren
+      text: weiter zur Webseite »
       link: /community/mitglieder.html
 
 features:

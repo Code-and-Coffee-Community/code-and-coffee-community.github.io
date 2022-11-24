@@ -1,3 +1,7 @@
+---
+description: Alle Events und Veranstaltungen im Überblick.
+---
+
 [PLATZHALTER BANNER]
 
 # Events

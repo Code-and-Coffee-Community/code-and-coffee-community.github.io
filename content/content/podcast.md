@@ -1,3 +1,7 @@
+---
+description: Unseren Podcast über das Thema Entwicklung und Programmierung findest du hier.
+---
+
 [PLATZHALTER BANNER]
 
 # Podcast
