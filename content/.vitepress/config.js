@@ -36,7 +36,6 @@ export default defineConfig({
       {
         text: 'Content',
         items: [
-          { text: 'Blog', link: '/content/blog' },
           { text: 'Podcast', link: '/content/podcast' },
           { text: 'TikTok', link: '/content/tiktok' },
           { text: 'Events', link: '/content/events' },
