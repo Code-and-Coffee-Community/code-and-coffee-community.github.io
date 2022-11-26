@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    "./content/**/*.{vue,js,ts,jsx,tsx,md}"
+    "./content/**/*.{vue,js,ts,jsx,tsx,md}",
+    // "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {},
