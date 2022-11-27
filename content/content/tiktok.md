@@ -12,17 +12,17 @@ fetch('https://api.sheetson.com/v2/sheets/TikTok?' + new URLSearchParams({
     spreadsheetId: '1PRaIqRnYl2kCCK1w7vFTAJv6GrNdK77bG9XhTn2UxNQ'
   }), { cache: 'no-cache' }
 ).then(response => response.json()).then(json => {
-  state.tiktoks = json.results.map(tiktok =>
+  for (const tiktok of json.results.reverse()) {
     fetch(`https://www.tiktok.com/oembed?url=https://www.tiktok.com/${tiktok.author}/video/${tiktok.video_id}`)
     .then(response => response.json())
     .then(json => {
-      return {
+      state.tiktoks.push({
         ...tiktok,
         title: json.title,
         image_url: json.thumbnail_url
-      }
+      })
     })
-  ).reverse()
+  }
 })
 </script>
 
