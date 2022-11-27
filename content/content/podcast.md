@@ -18,7 +18,7 @@ fetch('https://api.sheetson.com/v2/sheets/Podcast?' + new URLSearchParams({
 
 # Podcast
 >
-<div class="flex flex-col gap-4 sm:flex-row">
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
   <a v-for="podcast in state.podcasts" :href="`https://www.youtube.com/watch?v=${podcast.video_id}`" target="_blank" class="flex w-full bg-white border rounded-lg shadow-md sm:w-1/2 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
       <div class="w-2/5">
         <iframe class="object-cover w-full h-full rounded-none rounded-l-lg" width="100%" height="100%" :src="`https://www.youtube.com/embed/${podcast.video_id}?controls=0`" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -28,8 +28,8 @@ fetch('https://api.sheetson.com/v2/sheets/TikTok?' + new URLSearchParams({
 
 # TikTok
 >
-<div class="flex flex-col gap-4 sm:flex-row">
-  <a v-for="tiktok in state.tiktoks" :href="`https://www.tiktok.com/${tiktok.author}/video/${tiktok.video_id}`" target="_blank" class="flex w-full bg-white border rounded-lg shadow-md sm:w-1/2 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+  <a v-for="tiktok in state.tiktoks" :href="`https://www.tiktok.com/${tiktok.author}/video/${tiktok.video_id}`" target="_blank" class="flex bg-white border rounded-lg shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
       <div class="w-2/5">
         <img class="object-cover w-full h-full rounded-none rounded-l-lg" :src="tiktok.image_url" :alt="tiktok.title">
       </div>
