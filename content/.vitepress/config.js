@@ -15,6 +15,7 @@ export default defineConfig({
     ['meta', { name: "msapplication-TileColor", content: "#da532c"}],
     ['meta', { name: "msapplication-config", content: "/icons/browserconfig.xml"}],
     ['meta', { name: "theme-color", content: "#ffffff"}],
+    ['script', { src: "https://www.tiktok.com/embed.js"}],
   ],
   themeConfig: {
     siteTitle: 'Code & Coffee',
