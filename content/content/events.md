@@ -9,10 +9,11 @@ const state = reactive({ events: [] })
 
 fetch('https://api.sheetson.com/v2/sheets/Events?' + new URLSearchParams({
     apiKey: 'b4CyrfsTCufxGj7my4eNonELlxNPepoZ6s1AqM0PVrljct8V-u9KCmoRLPVLDQ',
-    spreadsheetId: '1PRaIqRnYl2kCCK1w7vFTAJv6GrNdK77bG9XhTn2UxNQ'
-  }), { cache: 'no-cache' }
+    spreadsheetId: '1PRaIqRnYl2kCCK1w7vFTAJv6GrNdK77bG9XhTn2UxNQ',
+    date: Date.now()
+  }), {cache: 'no-store'}
 ).then(response => response.json()).then(json => {
-  state.events = json.results.reverse()
+  state.events = json.results.sort((a,b) => b.rowIndex - a.rowIndex)
 })
 </script>
 

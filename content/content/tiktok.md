@@ -9,10 +9,12 @@ const state = reactive({ tiktoks: [] })
 
 fetch('https://api.sheetson.com/v2/sheets/TikTok?' + new URLSearchParams({
     apiKey: 'b4CyrfsTCufxGj7my4eNonELlxNPepoZ6s1AqM0PVrljct8V-u9KCmoRLPVLDQ',
-    spreadsheetId: '1PRaIqRnYl2kCCK1w7vFTAJv6GrNdK77bG9XhTn2UxNQ'
-  }), { cache: 'no-cache' }
+    spreadsheetId: '1PRaIqRnYl2kCCK1w7vFTAJv6GrNdK77bG9XhTn2UxNQ',
+    date: Date.now()
+  }), {cache: 'no-store'}
 ).then(response => response.json()).then(json => {
-  for (const tiktok of json.results.reverse()) {
+  const tiktoks = json.results
+  for (const tiktok of tiktoks) {
     fetch(`https://www.tiktok.com/oembed?url=https://www.tiktok.com/${tiktok.author}/video/${tiktok.video_id}`)
     .then(response => response.json())
     .then(json => {
@@ -21,6 +23,8 @@ fetch('https://api.sheetson.com/v2/sheets/TikTok?' + new URLSearchParams({
         title: json.title,
         image_url: json.thumbnail_url
       })
+
+      state.tiktoks = state.tiktoks.sort((a,b) => b.rowIndex - a.rowIndex)
     })
   }
 })
